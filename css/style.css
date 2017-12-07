@@ -1,0 +1,377 @@
+/**
+ * author:BlackAnWhite;
+ * 2017-12-07
+ */
+
+
+/**==================================================*
+*        login &  forgetPassWord                     *
+*===================================================**/
+.bgefefef{
+	background: #efefef;
+}
+.content{
+	font-size: 0.28rem;
+}
+.hasNav{
+	padding-bottom: 1.2rem;
+}
+body.login-bg {
+	width: 100%;
+	height: 100%;
+}
+
+.login-bg .login-top {
+	width: 100%;
+	/*height: 2rem;*/
+	font-size: 0.54rem;
+	text-align: center;
+	color: #fff;
+	margin: 1rem 0;
+}
+
+.login-form {
+	width: 6.4rem;
+	margin: 0 auto;
+	font-size: 0.36rem;
+}
+
+.login-form input {
+	width: 100%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	font-size: 0.28rem;
+	border-bottom: 1px solid #f64c68;
+	margin-bottom: 0.2rem;
+	background: transparent;
+	padding: 0 0.1rem;
+}
+.codeBox{
+	border-bottom: 1px solid #f64c68;
+	width: 100%;	
+	margin-top: 20px;
+}
+.codeBox input{
+	border: 0;
+	margin-bottom: 0;
+}
+.codeBox input.smsCode{
+	width: 3.4rem !important;
+}
+.codeBox input.getCode{
+	width: 3rem !important;
+	margin-top: 0 !important;
+	height: 0.6rem !important;
+	line-height: 0.6rem !important;
+	font-size: 0.28rem !important;
+}
+.login-form input::-webkit-input-placeholder {
+	color: #fff;
+}
+
+.login-form input:-moz-placeholder {
+	color: #fff;
+}
+
+.login-form input::-moz-placeholder {
+	color: #fff;
+}
+
+.login-form input:-ms-input-placeholder {
+	color: #fff;
+}
+
+.login-form input[type=button] {
+	width: 100%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	font-size: 0.36rem;
+	color: #fff;
+	margin-bottom: 0.2rem;
+	background: #F64C68;
+	border-radius: 0.05rem;
+	margin-top: 0.8rem;
+}
+
+.login-form .forget-pwd a {
+	color: #fff;
+	font-size: 0.24rem;
+}
+.login-rule{
+	position: fixed;
+	bottom: 0.4rem;
+	width: 100%;;
+	font-size: 0.24rem;
+	color: #fff;
+	text-align: center;
+}
+.login-rule a{
+	color: #F64C68;
+}
+
+
+
+
+
+/**==================================================*
+*        login &  forgetPassWord  end                *
+*===================================================**/
+
+/**==================================================*
+*             banner                                 *
+*===================================================**/
+.banner{
+	width: 100%;
+	height: 3.5rem;
+}
+.banner img{
+	width: 100%;
+}
+.banner .swiper-container{
+	width: 100%;
+	height: 100%;
+}
+/*swiper*/
+/*修改小圆点样式*/
+.swiper-pagination-bullet-active{
+	background: #fff !important;
+}
+/**==================================================*
+*                       banner end                   *
+*===================================================**/
+
+ /*滚动通知*/
+.scrollMsg{
+	width: 100%;
+	height: 0.8rem;
+	padding: 0 0.15rem 0 0.7rem;
+	margin-top: 0.2rem;
+	background: #fff url(../images/icon-1.png) no-repeat 0.15rem center;
+	background-size: 0.5rem;
+	overflow: hidden;
+}
+.scrollMsg .swiper-slide{
+	height: 0.8rem;
+	line-height: 0.8rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 0.28rem;
+	color: #666;
+}
+ /*滚动通知 end*/
+
+/*四宫格*/
+.grid{
+	width: 100%;
+	height: 1.8rem;
+	background: #fff;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+.grid ul{
+	width: 100%;
+	height: 100%;
+	clear: both;
+}
+.grid ul li{
+	width: 25%;
+	height: 100%;
+	border-right: 1px solid #ccc;
+	float: left;
+}
+.grid ul li:last-child{
+	border-right: 0;
+}
+.grid ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	padding-top: 1.2rem;
+}
+.grid ul li a span{
+	display: block;
+	width: 100%;
+	text-align: center;
+}
+
+/*体验大厅*/
+.hall{
+	width: 100%;
+	margin-top: 0.2rem;
+	background: #fff;
+	padding: 0.2rem;
+}
+.hall .hall-tit{
+	height: 0.36rem;
+	border-left: 4px solid #F64C68;
+	font-size: 0.36rem;
+	padding-left: 0.1rem;
+	color: #353535;
+}
+.hall ul{
+	width: 100%;
+	height: auto;
+	margin-top: 0.2rem;
+}
+.hall ul li{
+	width: 3.5rem;
+	height: 2rem;
+	border-radius: 0.1rem;
+	float: left;
+	margin-right: 0.1rem;
+	position: relative;
+	margin-top: 0.1rem;
+}
+.hall ul li:nth-child(even){
+	margin-right: 0;
+}
+.hall ul li a{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.hall ul li a .lastNum{
+	width: auto;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	border-radius: 0.15rem;
+	background: #F64C68;
+	font-size: 0.18rem;
+	padding: 0 0.15rem;
+	font-style: normal;
+	color: #fff;
+	position: absolute;
+	top: 0.2rem;
+	left: 0.2rem;
+}
+.hall ul li a p{
+	font-size: 0.48rem;
+	text-align: center;
+	color: #fff;
+	margin-top: 0.7rem;
+}
+.hall ul li a>span{
+	font-size: 0.24rem;
+	color: #fff;
+	display: block;
+	text-align: center;
+	margin-top: 0.1rem;
+	letter-spacing: 0.1rem;
+	text-indent: 0.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*四宫格 end*/

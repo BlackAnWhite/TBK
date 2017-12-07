@@ -226,12 +226,12 @@
 
   ::selection {
     color: #fff;
-    background: #fd6114;
+    background: #01a5f6;
   }
 
   ::-moz-selection {
     color: #fff;
-    background: #fd6114;
+    background: #01a5f6;
   }
 
   /*自定义*/
