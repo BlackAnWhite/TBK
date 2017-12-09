@@ -409,9 +409,24 @@ body.login-bg {
 	border-radius: 0.3rem;
 	color: #fff;
 }
-
-
-
+.money{
+	width: 100%;
+	height: 1.2rem;
+	background: #ff0;
+}
+.money ul{
+	width: 100%;
+	height: 100%;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+.money ul li{
+	width: 50%;
+	height: 100%;
+	float: left;
+	border-right: 1px solid #ccc;
+	text-align: center;
+}
 
 
 
