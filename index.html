@@ -15,7 +15,8 @@
 		<!-- 搜索引擎抓取 -->
 		<meta name="robots" content="index,follow" />
 		<!-- 为移动设备添加 viewport -->
-		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+		<!--<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />-->
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimum-scale=1" name="viewport" />
 
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/style.css" />
@@ -24,7 +25,7 @@
 		<script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
 		<script type="text/javascript" src="js/blackanwhite.js"></script>
 		<script>
-			document.documentElement.style.fontSize = 100 * document.documentElement.clientWidth / 750 + 'px';
+			document.documentElement.style.fontSize = 100 * document.documentElement.clientWidth / 750 + 'px';		
 		</script>
 
 	</head>
@@ -32,8 +33,30 @@
 	<body class="bgefefef hasNav">
 
 		<div class="content">
+			<!--底部固定导航-->
+			<nav>
+				<ul class="clearfix">
+					<li class="active" style="background: url(images/nav-11.png) no-repeat center 0.1rem;background-size: 0.6rem;">
+						<a href="index.html">
+							首页
+						</a>						
+					</li>
+					<li class="" style="background: url(images/nav-32.png) no-repeat center 0.1rem;background-size: 0.6rem;">
+						<a href="massage.html">
+							消息
+						</a>						
+					</li>
+					<li class="" style="background: url(images/nav-42.png) no-repeat center 0.1rem;background-size: 0.6rem;">
+						<a href="mine.html">
+							我的
+						</a>						
+					</li>
+				</ul>
+			</nav>			
+			<!--底部固定导航 end-->
+
 			<!--banner-->
-			<div class="banner">
+			<div class="banner setWH" data-height='3.5'>
 				<div class="swiper-container">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
@@ -60,7 +83,7 @@
 					<div class="swiper-button-next swiper-button-white"></div>-->
 
 				</div>
-			</div>
+			</div>			
 			<!--banner end-->
 			<!--滚动通知-->
 			<div class="scrollMsg">
@@ -103,7 +126,7 @@
 					体验大厅
 				</div>
 				<ul class="clearfix">
-					<li style="background: url(images/img-31.png) no-repeat center;background-size: 100%;">
+					<li class="setWH" data-width = "3.5" data-height = "2" style="background: url(images/img-31.png) no-repeat center;background-size: 100%;">
 						<a href="#">
 							<i class="lastNum">
 								待领取：<span>5</span>
@@ -112,7 +135,7 @@
 							<span>秀出美照领礼品</span>
 						</a>
 					</li>
-					<li style="background: url(images/img-32.png) no-repeat center;background-size: 100%;">
+					<li class="setWH" data-width = "3.5" data-height = "2" style="background: url(images/img-32.png) no-repeat center;background-size: 100%;">
 						<a href="#">
 							<i class="lastNum">
 								待领取：<span>2</span>
@@ -121,7 +144,7 @@
 							<span>秀出美照领礼品</span>
 						</a>
 					</li>
-					<li style="background: url(images/img-33.png) no-repeat center;background-size: 100%;">
+					<li class="setWH" data-width = "3.5" data-height = "2" style="background: url(images/img-33.png) no-repeat center;background-size: 100%;">
 						<a href="#">
 							<i class="lastNum">
 								待领取：<span>0</span>
@@ -130,7 +153,7 @@
 							<span>秀出美照领礼品</span>
 						</a>
 					</li>
-					<li style="background: url(images/img-34.png) no-repeat center;background-size: 100%;">
+					<li class="setWH" data-width = "3.5" data-height = "2" style="background: url(images/img-34.png) no-repeat center;background-size: 100%;">
 						<a href="#">
 							<i class="lastNum">
 								待领取：<span>1</span>
@@ -139,7 +162,7 @@
 							<span>秀出美照领礼品</span>
 						</a>
 					</li>
-					<li style="background: url(images/img-35.png) no-repeat center;background-size: 100%;">
+					<li class="setWH" data-width = "3.5" data-height = "2" style="background: url(images/img-35.png) no-repeat center;background-size: 100%;">
 						<a href="#">
 							<i class="lastNum">
 								待领取：<span>0</span>
