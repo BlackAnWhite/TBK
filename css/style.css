@@ -8,26 +8,32 @@
 *        login &  forgetPassWord                     *
 *===================================================**/
 
-.bgefefef{
+.bgefefef {
 	background: #efefef;
 }
-.content{
+
+.content {
 	font-size: 0.28rem;
 	/*width: 100%;*/
 	/*max-width: 10.8rem;*/
 	min-height: 12.34rem;
 	margin: 0 auto;
 }
-.hasNav{
+
+.hasNav {
 	padding-bottom: 1.2rem;
 }
+
 .autoimg {
-  background-size: cover !important;
-  background-repeat: no-repeat !important;
-  background-position: center center !important;
+	background-size: cover !important;
+	background-repeat: no-repeat !important;
+	background-position: center center !important;
 }
+
+
 /*固定底部导航*/
-nav{
+
+nav {
 	width: 100%;
 	height: 1rem;
 	background: #fff;
@@ -37,19 +43,23 @@ nav{
 	border-top: 1px solid #ccc;
 	z-index: 999999;
 }
-nav ul{
+
+nav ul {
 	width: 100%;
 	height: 100%;
 }
-nav ul li{
+
+nav ul li {
 	width: 33.33333333333333%;
 	height: 100%;
 	float: left;
 }
-nav ul li.active a{
+
+nav ul li.active a {
 	color: #F64C68;
 }
-nav ul li a{
+
+nav ul li a {
 	display: block;
 	width: 1rem;
 	height: 100%;
@@ -58,7 +68,10 @@ nav ul li a{
 	padding-top: 0.7rem;
 	font-size: 0.24rem
 }
+
+
 /*固定底部导航 end*/
+
 body.login-bg {
 	width: 100%;
 	height: 100%;
@@ -88,40 +101,62 @@ body.login-bg {
 	margin-bottom: 0.2rem;
 	background: transparent;
 	padding: 0 0.1rem;
+	color: #fff;
 }
-.codeBox{
+
+.login-form textarea {
+	background: transparent;
+	font-size: 0.24rem;
+	padding: 0.15rem;
+	width: 100%;
+	height: 1.2rem;
+	border: 1px solid #F64C68;
+	border-radius: 0.1rem;
+	line-height: 0.3rem;
+	color: #fff;
+}
+
+.codeBox {
 	border-bottom: 1px solid #f64c68;
 	width: 100%;
 	margin-top: 20px;
 }
-.codeBox input{
+
+.codeBox input {
 	border: 0;
 	margin-bottom: 0;
 }
-.codeBox input.smsCode{
+
+.codeBox input.smsCode {
 	width: 55% !important;
 }
-.codeBox input.getCode{
+
+.codeBox input.getCode {
 	width: 45% !important;
 	margin-top: 0 !important;
 	height: 0.6rem !important;
 	line-height: 0.6rem !important;
 	font-size: 0.28rem !important;
 }
-.login-form input::-webkit-input-placeholder {
-	color: #fff;
+
+.login-form input::-webkit-input-placeholder,
+.login-form textarea::-webkit-input-placeholder {
+	color: #e5e5e5;
 }
 
-.login-form input:-moz-placeholder {
-	color: #fff;
+.login-form input:-moz-placeholder,
+.login-form textarea:-moz-placeholder {
+	color: #e5e5e5;
 }
 
-.login-form input::-moz-placeholder {
-	color: #fff;
+.login-form input::-moz-placeholder,
+.login-form textarea::-moz-placeholder {
+	color: #e5e5e5;
 }
 
-.login-form input:-ms-input-placeholder {
-	color: #fff;
+.login-form input:-ms-input-placeholder,
+.login-form textarea:-ms-input-placeholder {
+	color: #e5e5e5;
 }
 
 .login-form input[type=button] {
@@ -140,51 +175,64 @@ body.login-bg {
 	color: #fff;
 	font-size: 0.24rem;
 }
-.login-rule{
+
+.login-rule {
 	position: fixed;
 	bottom: 0.4rem;
-	width: 100%;;
+	width: 100%;
+	;
 	font-size: 0.24rem;
 	color: #fff;
 	text-align: center;
 }
-.login-rule a{
+
+.login-rule a {
 	color: #F64C68;
 }
-
-
-
 
 
 /**==================================================*
 *        login &  forgetPassWord  end                *
 *===================================================**/
 
+
 /**==================================================*
 *             banner                                 *
 *===================================================**/
-.banner{
+
+.banner {
 	width: 100%;
 	height: 3.5rem;
 }
-.banner img{
+
+.banner img {
 	width: 100%;
 }
-.banner .swiper-container{
+
+.banner .swiper-container {
 	width: 100%;
 	height: 100%;
 }
+
+
 /*swiper*/
+
+
 /*修改小圆点样式*/
-.swiper-pagination-bullet-active{
+
+.swiper-pagination-bullet-active {
 	background: #fff !important;
 }
+
+
 /**==================================================*
 *                       banner end                   *
 *===================================================**/
 
- /*滚动通知*/
-.scrollMsg{
+
+/*滚动通知*/
+
+.scrollMsg {
 	width: 100%;
 	height: 0.8rem;
 	padding: 0 0.15rem 0 0.7rem;
@@ -193,7 +241,8 @@ body.login-bg {
 	background-size: 0.5rem;
 	overflow: hidden;
 }
-.scrollMsg .swiper-slide{
+
+.scrollMsg .swiper-slide {
 	height: 0.8rem;
 	line-height: 0.8rem;
 	vertical-align: middle;
@@ -203,57 +252,70 @@ body.login-bg {
 	font-size: 0.28rem;
 	color: #666;
 }
- /*滚动通知 end*/
+
+
+/*滚动通知 end*/
+
 
 /*四宫格*/
-.grid{
+
+.grid {
 	width: 100%;
 	height: 1.8rem;
 	background: #fff;
 	border-bottom: 1px solid #ccc;
 	border-top: 1px solid #ccc;
 }
-.grid ul{
+
+.grid ul {
 	width: 100%;
 	height: 100%;
 	clear: both;
 }
-.grid ul li{
+
+.grid ul li {
 	width: 25%;
 	height: 100%;
 	border-right: 1px solid #ccc;
 	float: left;
 }
-.grid ul li:last-child{
+
+.grid ul li:last-child {
 	border-right: 0;
 }
-.grid ul li a{
+
+.grid ul li a {
 	display: block;
 	width: 100%;
 	height: 100%;
 	padding-top: 1.2rem;
 }
-.grid ul li a span{
+
+.grid ul li a span {
 	display: block;
 	width: 100%;
 	text-align: center;
 }
 
+
 /*体验大厅*/
-.hall{
+
+.hall {
 	width: 100%;
 	margin-top: 0.2rem;
 	background: #fff;
 	padding: 0.2rem;
 }
-.hall .hall-tit{
+
+.hall .hall-tit {
 	height: 0.36rem;
 	border-left: 4px solid #F64C68;
 	font-size: 0.36rem;
 	padding-left: 0.1rem;
 	color: #353535;
 }
-.hall .hall-tit a.more{
+
+.hall .hall-tit a.more {
 	display: inline-block;
 	width: 0.3rem;
 	height: 100%;
@@ -261,12 +323,14 @@ body.login-bg {
 	background-size: 0.2rem;
 	float: right;
 }
-.hall ul{
+
+.hall ul {
 	width: 100%;
 	height: auto;
 	margin-top: 0.2rem;
 }
-.hall ul li{
+
+.hall ul li {
 	width: 3.5rem;
 	height: 2rem;
 	border-radius: 0.1rem;
@@ -275,20 +339,22 @@ body.login-bg {
 	position: relative;
 	margin-top: 0.1rem;
 }
-.hall ul li:nth-child(even){
+
+.hall ul li:nth-child(even) {
 	margin-right: 0;
 }
-.hall ul li a{
+
+.hall ul li a {
 	width: 100%;
 	height: 100%;
 	display: block;
 }
-.hall ul li a .lastNum{
+
+.hall ul li a .lastNum {
 	width: auto;
 	height: 0.3rem;
 	line-height: 0.3rem;
 	/*vertical-align: middle;*/
-
 	border-radius: 0.15rem;
 	background: #F64C68;
 	font-size: 0.18rem;
@@ -300,13 +366,15 @@ body.login-bg {
 	top: 0.2rem;
 	left: 0.2rem;
 }
-.hall ul li a p{
+
+.hall ul li a p {
 	font-size: 0.48rem;
 	text-align: center;
 	color: #fff;
 	margin-top: 0.7rem;
 }
-.hall ul li a>span{
+
+.hall ul li a>span {
 	font-size: 0.24rem;
 	color: #fff;
 	display: block;
@@ -316,49 +384,60 @@ body.login-bg {
 	text-indent: 0.1rem;
 }
 
+
 /*消息列表*/
-.massage{
+
+.massage {
 	width: 100%;
-	height:auto;
+	height: auto;
 }
-.massage .msgBox{
+
+.massage .msgBox {
 	width: 100%;
 	height: auto;
 	padding: 0.15rem;
 	background: #fff;
 	margin-bottom: 0.15rem;
 }
-.massage .msgBox .headPic{
+
+.massage .msgBox .headPic {
 	width: 1rem;
 	height: 1rem;
 	margin-right: 0.15rem;
 }
-.massage .msgBox .msgCon{
+
+.massage .msgBox .msgCon {
 	width: 5.4rem;
 	height: auto;
 }
-.massage .msgBox .msgCon img{
+
+.massage .msgBox .msgCon img {
 	max-width: 100%;
 }
-.massage .msgBox .msgCon .msgTit{
+
+.massage .msgBox .msgCon .msgTit {
 	width: 100%;
 	height: 0.6rem;
 	line-height: 0.6rem;
 	font-size: 0.36rem;
 	color: #0486e2;
 }
-.massage .msgBox .msgCon .msgTxt{
+
+.massage .msgBox .msgCon .msgTxt {
 	width: 100%;
 	line-height: 1.4;
 }
-.massage .msgBox .msgCon .msgTime{
+
+.massage .msgBox .msgCon .msgTime {
 	margin-top: 0.2rem;
 	font-size: 0.24rem;
 	color: #999;
 }
 
+
 /*分页*/
-.page{
+
+.page {
 	width: 4.2rem;
 	height: 0.6rem;
 	line-height: 0.6rem;
@@ -366,27 +445,34 @@ body.login-bg {
 	border-radius: 0.1rem;
 	overflow: hidden;
 }
+
 .page .prev,
-.page .next{
+.page .next {
 	width: 35%;
 	background: #f64c68;
 	color: #fff;
 	text-align: center;
 }
-.page .num{
+
+.page .num {
 	background: #fff;
 	width: 30%;
 	text-align: center;
 }
+
+
 /*分页 end*/
 
+
 /*个人中心*/
-.mineTop{
+
+.mineTop {
 	width: 100%;
 	height: 2rem;
 	position: relative;
 }
-.mineTop .minePic{
+
+.mineTop .minePic {
 	width: 1.4rem;
 	height: 1.4rem;
 	border-radius: 50%;
@@ -395,7 +481,8 @@ body.login-bg {
 	margin-top: -0.7rem;
 	left: 0.4rem;
 }
-.mineTop .myName{
+
+.mineTop .myName {
 	width: 60%;
 	font-size: 0.36rem;
 	color: #fff;
@@ -403,64 +490,73 @@ body.login-bg {
 	left: 26%;
 	top: 30%;
 }
-.mineTop .rz{
+
+.mineTop .rz {
 	width: 60%;
 	font-size: 0.24rem;
 	position: absolute;
 	left: 26%;
 	top: 55%;
-
 }
-.mineTop .rz span{
+
+.mineTop .rz span {
 	display: inline-block;
-	background: #f64c68;	
+	background: #f64c68;
 	padding: 0.06rem 0.15rem;
 	border-radius: 0.3rem;
 	color: #fff;
 }
-.money{
+
+.money {
 	width: 100%;
 	height: 1.2rem;
 	background: #fff;
 }
-.money ul{
+
+.money ul {
 	width: 100%;
 	height: 100%;
 	/*border-top: 1px solid #ccc;*/
 	border-bottom: 1px solid #ccc;
 }
-.money ul li{
+
+.money ul li {
 	width: 50%;
 	height: 100%;
 	float: left;
 	border-right: 1px solid #ccc;
 	text-align: center;
 }
-.money ul li:last-child{
+
+.money ul li:last-child {
 	margin-right: 0;
 }
-.money ul li p{
+
+.money ul li p {
 	font-size: 0.24rem;
 	color: #666;
 	margin-top: 5%;
 }
-.money ul li span{
+
+.money ul li span {
 	font-size: 0.32rem;
 	margin-top: 5%;
 	display: inline-block;
 	color: #353535;
 }
 
-.mylist{
+.mylist {
 	width: 100%;
 	margin-top: 0.2rem;
 	background: #fff;
 }
-.mylist ul{
+
+.mylist ul {
 	width: 100%;
 	height: auto;
 }
-.mylist ul li{
+
+.mylist ul li {
 	width: 100%;
 	height: 0.8rem;
 	border-bottom: 1px solid #eee;
@@ -469,30 +565,41 @@ body.login-bg {
 	background: url(../images/arrow.png) no-repeat 7.1rem center;
 	background-size: 0.18rem;
 }
-.mylist ul li:last-child{
+
+.mylist ul li:last-child {
 	border-bottom: 0;
 }
-.mylist ul li a{
+
+.mylist ul li a {
 	display: block;
 	width: 100%;
 	height: 100%;
 }
-.mylist ul li a span{
+
+.mylist ul li a span {
 	float: right;
 	margin-right: 0.4rem;
 	font-size: 0.22rem;
 	color: #999;
 }
 
+
 /*体验大厅列表*/
 
-.hallTop{
+.fixTop {
+	width: 100%;
+	position: fixed;
+	z-index: 99999;
+}
+
+.hallTop {
 	width: 100%;
 	height: 0.8rem;
 	background: #F64C68;
 	position: relative;
 }
-.hallTop .back{
+
+.hallTop .back {
 	width: 0.8rem;
 	height: 0.8rem;
 	position: absolute;
@@ -501,8 +608,12 @@ body.login-bg {
 	background: url(../images/arrowleft.png) no-repeat center;
 	background-size: 0.24rem;
 }
-.hallTop .back a{display: block;}
-.hallTop .hallName{
+
+.hallTop .back a {
+	display: block;
+}
+
+.hallTop .hallName {
 	width: 60%;
 	height: 100%;
 	margin: 0 auto;
@@ -512,7 +623,7 @@ body.login-bg {
 	color: #fff;
 }
 
-.hallTop .hallSelect{
+.hallTop .hallSelect {
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -526,42 +637,49 @@ body.login-bg {
 	background-size: 0.2rem;
 	margin-top: 0.2rem;
 }
-.hallTop .othersHall{
+
+.hallTop .othersHall {
 	width: 3rem;
 	height: auto;
-	background: rgba(0,0,0,.6);
+	background: rgba(0, 0, 0, .6);
 	border-radius: 0.1rem;
 	position: absolute;
 	right: 0.2rem;
 	top: 100%;
 	display: none;
+	z-index: 99999999;
 }
-.hallTop .othersHall:after{
+
+.hallTop .othersHall:after {
 	content: '';
 	position: absolute;
 	width: 0;
 	height: 0;
-	border:0.16rem solid transparent;
+	border: 0.16rem solid transparent;
 	border-bottom: 0.16rem solid #777;
 	top: -0.30rem;
 	right: 0.3rem;
 }
-.othersHall ul li{
+
+.othersHall ul li {
 	width: 100%;
 	height: 0.8rem;
 	line-height: 0.8rem;
 	padding: 0 0.2rem;
-	border-bottom: 1px solid #666666;
+	border-bottom: 1px solid #aaa;
 }
-.othersHall ul li:last-child{
+
+.othersHall ul li:last-child {
 	border: 0;
 }
-.othersHall ul li a{
+
+.othersHall ul li a {
 	display: block;
 	color: #fff;
 	position: relative;
 }
-.othersHall ul li a span{
+
+.othersHall ul li a span {
 	display: inline-block;
 	width: 0.40rem;
 	height: 0.40rem;
@@ -574,86 +692,963 @@ body.login-bg {
 	top: 0.2rem;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*四宫格 end*/
+.returnGoods {
+	width: 100%;
+	height: 0.8rem;
+	background: #fff;
+	position: relative;
+}
+
+.returnGoods::after {
+	content: '';
+	width: 2px;
+	height: 0.4rem;
+	background: #ccc;
+	position: absolute;
+	top: 0.2rem;
+}
+
+.returnGoods ul {
+	width: 100%;
+	height: 100%;
+}
+
+.returnGoods ul li {
+	width: 50%;
+	float: left;
+	line-height: 0.8rem;
+	text-align: center;
+}
+
+.returnGoods ul li.active a {
+	color: #F64C68;
+	padding: 0 0.1rem;
+	border-bottom: 2px solid #F64C68;
+}
+
+.getGoods {
+	width: 100%;
+	height: 0.9rem;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+}
+
+.getGoods ul {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.getGoods li {
+	width: 22%;
+	height: 0.56rem;
+	float: left;
+	line-height: 0.56rem;
+	border: 1px solid #ddd;
+	border-radius: 0.3rem;
+	text-align: center;
+	margin: 0.12rem 5.666666% 0.15rem 5.66666%;
+}
+
+.getGoods li.active {
+	border: 1px solid #F64C68;
+}
+
+.getGoods li.active a {
+	color: #F64C68;
+}
+
+.getGoods li a {
+	font-size: 0.24rem;
+}
+
+
+/*列表*/
+
+.goodsList {
+	width: 100%;
+	padding-top: 2.65rem;
+}
+
+.goodsList ul {
+	width: 100%;
+}
+
+.goodsList ul li {
+	width: 100%;
+	height: 2.2rem;
+	background: #fff;
+	margin-bottom: 0.15rem;
+	padding: 0.2rem 0.15rem;
+}
+
+.goodsList ul li .leftImg {
+	width: 1.8rem;
+	height: 1.8rem;
+}
+
+.goodsList ul li a {
+	display: block;
+	width: 75%;
+	height: 100%;
+	float: left;
+}
+
+.goodsList ul li .listMid {
+	width: 3.6rem;
+	height: 100%;
+	padding: 0 0.1rem;
+	overflow: hidden;
+}
+
+.goodsList ul li .listMid h3 {
+	font-size: 0.32rem;
+	color: #F64C68;
+	width: 100%;
+	height: 0.4rem;
+	line-height: 0.4rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 0.1rem 0;
+}
+
+.goodsList ul li .listMid p {
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	line-height: 0.42rem;
+	font-size: 0.24rem;
+}
+
+.goodsList ul li .listMid p.pmgressBarBox {
+	position: relative;
+}
+
+.goodsList ul li .listMid p span {
+	color: #F64C68;
+	display: inline-block;
+}
+
+.goodsList ul li .listMid p .pmgressBar {
+	width: 1.6rem;
+	border: 1px solid #F64C68;
+	height: 0.28rem;
+	border-radius: 0.14rem;
+	display: inline-block;
+	background: #feb6b7;
+	position: absolute;
+	top: 50%;
+	margin-top: -0.14rem;
+	text-align: center;
+	color: #fff;
+	font-size: 0.2rem;
+	line-height: 0.24rem;
+}
+
+.goodsList ul li .listMid p .pmgressBar i {
+	font-style: normal;
+	position: relative;
+	z-index: 1;
+}
+
+.goodsList ul li .listMid p .pmgressBar .now {
+	position: absolute;
+	display: block;
+	background: #F64C68;
+	width: 0%;
+	height: 100%;
+	border-radius: 0.13rem;
+	z-index: 0;
+}
+
+.goodsList ul li .listRig {
+	width: 1.8rem;
+	height: 100%;
+}
+
+.goodsList ul li .listRig p {
+	width: 100%;
+	height: 0.44rem;
+	line-height: 0.44rem;
+	text-align: right;
+	padding-right: 0.1rem;
+}
+
+.goodsList ul li .listRig p .ifReturn {
+	width: 80%;
+	height: 0.4rem;
+	display: block;
+	float: right;
+	background: #F64C68;
+	color: #fff;
+	text-align: center;
+	border-radius: 0.22rem;
+	font-size: 0.24rem
+}
+
+
+/*个人中心-买号管理*/
+
+.addBtn {
+	width: 80%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	background: #F64C68;
+	text-align: center;
+	border-radius: 0.1rem;
+	margin: 0 auto;
+	position: fixed;
+	bottom: 0.2rem;
+	left: 50%;
+	margin-left: -40%;
+	z-index: 2;
+}
+
+.addBtn a {
+	display: block;
+	color: #fff;
+}
+
+.accountList {
+	width: 100%;
+	height: auto;
+}
+
+.accountList ul {
+	width: 100%;
+	padding-top: 0.15rem;
+}
+
+.accountList ul li {
+	width: 100%;
+	height: 1rem;
+	background: #fff;
+	margin-bottom: 0.15rem;
+	padding: 0.1rem 0.15rem;
+}
+
+.accountList ul li .accoLeft {
+	width: 60%;
+}
+
+.accountList ul li .accoLeft p:first-child {
+	width: 100%;
+	height: 0.36rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 0.3rem;
+	color: #353535;
+}
+
+.accountList ul li .accoLeft p:last-child {
+	width: 100%;
+	height: 0.24rem;
+	margin-top: 0.1rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #999;
+	font-size: 0.24rem;
+}
+
+.accountList ul li .accoRight {
+	width: 36%;
+}
+
+.accountList ul li .accoRight .chackBtn {
+	height: 0.6rem;
+	width: 60%;
+	background: #F64C68;
+	text-align: center;
+	line-height: 0.6rem;
+	border-radius: 0.1rem;
+	float: right;
+	margin-top: 0.1rem;
+}
+
+.accountList ul li .accoRight .chackBtn a {
+	color: #fff;
+}
+
+
+/*个人中心-买号管理-账号详情*/
+
+.accoInfo {
+	width: 100%;
+	height: auto;
+	background: #fff;
+	padding: 0.2rem 0;
+}
+
+.accoInfo ul li {
+	width: 100%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	padding: 0 0.15rem;
+	border-bottom: 1px solid #ddd;
+	font-size: 0.32rem;
+	color: #353535;
+}
+
+.accoInfo ul li span {
+	float: right;
+	color: #999;
+}
+
+.accoInfo p {
+	width: 100%;
+	height: auto;
+	line-height: 1.2;
+	padding: 0.15rem;
+	min-height: 1.2rem;
+}
+
+
+/*个人中心-我的资产*/
+
+.myMoney {
+	width: 100%;
+	height: auto;
+}
+
+.myMoney .picBox {
+	width: 2.2rem;
+	height: 2.2rem;
+	margin: 0.6rem auto;
+}
+
+.myMoney .monTit {
+	width: 100%;
+	font-size: 0.32rem;
+	color: #353535;
+	text-align: center;
+}
+
+.myMoney .monNum {
+	width: 100%;
+	font-size: 0.56rem;
+	color: red;
+	text-align: center;
+	margin-top: 0.2rem;
+}
+
+.myMoney .getMonBtn,
+.myMoney .monInfoBtn {
+	width: 90%;
+	height: 0.8rem;
+	border-radius: 0.1rem;
+	text-align: center;
+	line-height: 0.8rem;
+	margin: 0 auto;
+	margin-top: 0.3rem;
+}
+
+.myMoney .monInfoBtn {
+	background: #fff;
+}
+
+.myMoney .getMonBtn {
+	background: #F64C68;
+	margin-top: 0.5rem;
+}
+
+.myMoney .getMonBtn a,
+.myMoney .monInfoBtn a {
+	display: block;
+	width: 100%;
+	font-size: 0.32rem
+}
+
+.myMoney .getMonBtn a {
+	color: #fff;
+}
+
+
+/*电影专区*/
+
+.movType {
+	width: 100%;
+	height: 0.8rem;
+	background: #fff;
+	padding:0 0.2rem;
+}
+.movType .active a{
+	/*border-bottom: 2px solid #F64C68;*/
+	color: #F64C68;
+}
+.movType .swiper-slide {
+	/*width: 20%;*/
+	text-align: center;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.movType .swiper-slide a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/*电影列表*/
+.movieList{
+	width: 100%;
+	padding: 0.15rem;
+	padding-top: 1.8rem;
+}
+.movieList ul{
+	width: 100%;
+}
+.movieList ul li{
+	width: 3.5rem;
+	height: 4.6rem;
+	border-radius: 0.1rem;
+	overflow: hidden;
+	position: relative;
+	margin-right: 0.2rem;
+	margin-bottom: 0.2rem;
+	float: left;
+}
+.movieList ul li:nth-child(2n){
+	margin-right: 0;
+}
+.movieList ul li a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.movieList ul li p{
+	position: absolute;
+	width: 100%;
+	height: 0.8rem;
+	background: rgba(0,0,0,0.3);
+	bottom: 0;	
+	line-height: 0.8rem;
+	text-align: center;
+	color: #fff;
+	padding: 0 0.1rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+/*淘宝客专区*/
+.rank{
+	width: 100%;
+	height: 0.8rem;
+	padding: 0 0.15rem;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background: #fff;
+}
+.rank ul{
+	width: 100%;
+	height: 100%;
+
+}
+.rank ul li{
+	float: left;
+	line-height: 0.8rem;
+	text-align: center;
+}
+.rank ul li.active a{
+	color: #F64C68;
+}
+.tbkList{
+	width: 100%;
+	height: auto;
+	padding: 0.15rem 0;
+	padding-top: 2.6rem;
+}
+.tbkList ul{
+	width: 100%;
+	height: 100%;
+}
+.tbkList ul li{
+	width: 100%;
+	height: 2.2rem;
+	background: #fff;
+	padding: 0.2rem;
+	margin-bottom: 0.2rem;
+}
+.tbkList ul li a{
+	display: block;
+}
+.tbkList ul li .tbkLeft{
+	width: 1.8rem;
+	height: 1.8rem;
+}
+.tbkList ul li .tbkRight{
+	width: 5.3rem;
+	height: 100%;
+	padding: 0 0.2rem;
+	position: relative;
+}
+.tbkList ul li .tbkRight h3{
+	width: 100%;
+	height: 0.8rem;
+	line-height: 0.4rem;
+	overflow: hidden;
+	font-size: 0.32rem;
+	color: #F64C68;
+}
+.tbkList ul li .tbkRight p{
+	width: 40%;
+	font-size: 0.24rem;
+	margin-top: 0.06rem;
+}
+.tbkList ul li .tbkRight p .redNum{
+	font-size: 0.32rem;
+	color: red;
+}
+.tbkList ul li .tbkRight p.del{
+	text-decoration:line-through;
+}
+.tbkList ul li .tbkRight .getCoupon{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	font-size: 0.24rem;
+}
+.tbkList ul li .tbkRight .getCoupon span:nth-child(1){
+	display: inline-block;	
+  background: #fd960b;
+	padding: 0.1rem;
+	color: #fff;
+	border-top-left-radius: 0.22rem;
+	border-bottom-left-radius: 0.22rem;
+	margin-right: 1px;
+}
+.tbkList ul li .tbkRight .getCoupon span:nth-child(2){
+	display: inline-block;	
+  background: #F64C68;
+	padding: 0.1rem;
+	color: #fff;
+}
+
+
+/*淘宝客专区详情页*/
+.botBtn{
+	width: 100%;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	font-size: 0.36rem;
+	color: #fff;
+	background: #F64C68;
+	position: fixed;
+	z-index: 999;
+	bottom: 0;
+}
+.blackBg{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background: rgba(0,0,0,.4);
+	z-index: 99999;
+	display: none;
+}
+.alertBox{
+	position: fixed;
+	top: 50%;
+	margin-top: -2.3rem;
+	width: 90%;
+	height: 4.6rem;
+	left: 50%;
+	margin-left: -45%;
+	background: #fff;
+	z-index: 999999;
+	border-radius: 0.1rem;
+	box-shadow: 0 0 10px #aaa;
+	overflow: hidden;
+	display: none;
+}
+.alertBox .alertBoxTit{
+	width: 100%;
+	height: 0.8rem;
+	text-align: center;
+	height: 0.8rem;
+	background: #F64C68;
+	font-size: 0.36rem;
+	color: #fff;
+	line-height: 0.8rem;
+}
+.alertBox textarea{
+	display: block;
+	padding: 0.1rem;
+	text-align: left;
+	line-height: 1.2;
+	width: 90%;
+	margin: 0.2rem auto;
+	height: 2rem;
+	border: 2px dashed #f64c68;
+	background: #FDEBE7;
+}
+.alertBox>p{
+	width: 90%;
+	margin: 0 auto;
+	line-height: 0.6rem;
+	font-size: 0.24rem
+}
+.succBox{
+	position: fixed;
+	bottom: 1.6rem;
+	width: 3rem;
+	height: 0.8rem;
+	left: 50%;
+	margin-left: -1.5rem;
+	background: rgba(0,0,0,.4);
+	color: #fff;
+	text-align: center;
+	line-height: 0.8rem;
+	border-radius: 0.1rem;
+	display: none;
+	z-index: 99999;
+}
+#copy_url_one{
+	width: 90%;
+	height: 0.6rem;
+	margin: 0 auto;
+	display: block;
+	background: #f64c68;
+	color: #fff;
+}
+.bigPic{
+	width: 100%;
+	height: 7.5rem;
+	overflow: hidden;
+}
+.priceTime{
+	width: 100%;
+	height: 0.8rem;
+} 
+.priceTime .price{
+	width: 60%;
+	height: 100%;
+	line-height: 0.8rem;
+	text-align: center;
+	background: -webkit-linear-gradient(left, #F42B8E , #F2325B); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #F42B8E, #F2325B);     /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #F42B8E, #F2325B);  /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #F42B8E , #F2325B);  /* 标准的语法 */
+  color: #fff;
+}
+.priceTime .price .nowPrice{
+	font-size: 0.48rem
+}
+.priceTime .price .beforePrice{
+	text-decoration: line-through;
+}
+.priceTime .lastTime{
+	width: 40%;
+	height: 100%;
+	background: #FFEAE9;
+	text-align: center;
+}
+.priceTime .lastTime .lastTimeTxt{
+	font-size: 0.24rem;
+	color: #F64C68;
+	margin: 0.04rem 0;
+}
+.priceTime .lastTime #run{
+	font-size: 0.32rem;
+	color: #F64C68;
+}
+.priceTime .lastTime #run span{
+	display: inline-block;
+	margin: 0 0.05rem;
+	color: #fff;
+	background: #F64C68;
+	padding: 0.04rem;
+	border-radius: 0.1rem;
+}
+.goodsTit{
+	width: 100%;
+	height: auto;
+	background: #fff;
+	padding-bottom: 0.2rem;
+}
+.goodsTit p{
+	padding: 0.2rem 0.15rem;
+	width: 100%;
+	line-height: 0.48rem;
+	font-size: 0.32rem;
+}
+.goodsTit .signBox{
+	width: 100%;
+	padding: 0 0.15rem;
+}
+.goodsTit .signBox span{
+	display: inline-block;
+	padding: 0.04rem;
+	font-size: 0.24rem;
+	background: #F42B8E;
+	color: #fff;
+	margin-right: 0.1rem;
+}
+.goodsTit .signBox span:nth-child(2){
+	background: #FD960B;
+}
+.picInfo{
+	width: 100%;
+	height: auto;
+	margin-top: 0.2rem;
+}
+
+.picInfo .picInfoTit{
+	width: 100%;
+	padding: 0.15rem;
+	background: #fff;
+	border-bottom: 1px solid #efefef;
+}
+.picInfo .picInfoTit span{
+	display: inline-block;
+	width: 0.2rem;
+	height: 0.3rem;
+	background: url(../images/arrow.png) no-repeat center center;
+	float: right;
+	background-size: 0.18rem;
+}
+.picInfo p{
+	width: 100%;
+	padding: 0.15rem;
+	background: #fff;
+	line-height: 0.4rem;
+	font-size: 0.24rem;
+}
+.picInfo p span{
+	border: 1px solid #F42B8E;
+	border-radius: 0.05rem;
+	display: inline-block;
+	padding: 0 0.08rem;
+	margin-right: 0.1rem;
+	color: #F42B8E;
+}
+.picInfoBox{
+	width: 100%;
+	height: auto;
+	/*margin-bottom: 0.2rem;*/
+	display: none;	
+}
+.picInfoBox img{
+	width: 100%;
+}
+
+.recommend{
+	width: 100%;
+	margin: 0.2rem 0;
+	background: #fff;
+}
+.recommend .recTit{
+	width: 100%;
+	padding: 0.15rem;
+	border-bottom: 1px solid #EFEFEF;
+}
+.recommend .recList{
+	width: 100%;
+	padding: 0.15rem;
+}
+.recommend .recList ul{
+	width: 100%;
+}
+.recommend .recList ul li{
+	margin-right: 0.2rem;
+	margin-bottom: 0.2rem;
+	width: 3.5rem;
+	height: 5.5rem;
+	float: left;
+}
+.recommend .recList ul li:nth-child(2n){
+	margin-right: 0;
+}
+.recommend .recList ul li .recPic{
+	width: 3.5rem;
+	height: 3.5rem;
+	position: relative;
+	z-index: 0;
+}
+.recommend .recList ul li .recPic p{
+	width: 100%;
+	height: 0.5rem;
+	line-height: 0.5rem;
+	background: rgba(0,0,0,.5);
+	font-size: 0.24rem;
+	text-align: center;
+	color: #fff;
+	position: absolute;
+	bottom: 0;
+}
+.recommend .recList ul li>p{
+	height: 0.8rem;
+	line-height: 0.4rem;
+	overflow: hidden;
+	color: #353535;
+}
+.recommend .recList ul li .recMoney{
+	width: 100%;
+	height: 0.6rem;
+	line-height: 0.6rem;
+}
+.recommend .recList ul li .recMoney span:nth-child(1){
+	font-size: 0.36rem;
+	color: red;
+}
+.recommend .recList ul li .recMoney span:nth-child(2){
+	font-size: 0.24rem;
+	text-decoration: line-through;
+}
+.recommend .recList ul li .getCoupon{
+	width: 100%;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	font-size: 0.24rem;
+	color: #fff;
+}
+.recommend .recList ul li .getCoupon span:nth-child(1){
+	display: inline-block;
+	width: 60%;
+	background: #F42B8E;
+	text-align: center;
+	float: left;
+}
+.recommend .recList ul li .getCoupon span:nth-child(2){
+	display: inline-block;
+	width: 39%;
+	background: #FD960B;
+	text-align: center;
+	float: right;
+}
+
+/*收支明细*/
+.inMoney{
+	width: 100%;
+}
+.inMoney .aBox{
+	width: 100%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	background: #fff;
+}
+.inMoney .aBox a{
+	display: inline-block;
+	width: 50%;
+	float: left;
+	text-align: center;
+}
+.inMoney .aBox a.active{
+	color: #F64C68;
+	border-bottom: 2px solid #F64C68;
+}
+.inMoney .inMoneyList{
+	width: 100%;
+	margin-top: 0.1rem;
+}
+.inMoney .inMoneyList ul{
+	width: 100%;
+}
+.inMoney .inMoneyList ul li{
+	width: 100%;
+	height: auto;
+	padding: 0.15rem;
+	background: #fff;
+	margin-bottom: 2px;
+}
+.inMoney .inMoneyList ul li div{
+	width: 100%;
+	font-size: 0.36rem;
+	color: #353535;
+}
+.inMoney .inMoneyList ul li div span{
+	float: right;
+	font-size: 0.24rem;
+	color: #999;
+}
+.inMoney .inMoneyList ul li p{
+	line-height: 0.4rem;
+	font-size: 0.24rem;
+	margin-top: 0.1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*all end*/

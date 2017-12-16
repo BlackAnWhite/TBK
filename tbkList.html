@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>体验大厅</title>
+		<meta charset="UTF-8">
+		<!-- 优先使用 IE 最新版本和 Chrome -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<!-- 页面描述 -->
+		<meta name="description" content="" />
+		<!-- 页面关键词 -->
+		<meta name="keywords" content="" />
+		<!-- 网页作者 -->
+		<meta name="author" content="BlackAnWhite" />
+		<!-- 搜索引擎抓取 -->
+		<meta name="robots" content="index,follow" />
+		<!-- 为移动设备添加 viewport -->
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0 , minimum-scale=1" name="viewport" />
+
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/blackanwhite.js"></script>
+		<script>
+			document.documentElement.style.fontSize = 100 * document.documentElement.clientWidth / 750 + 'px';
+		</script>
+
+	</head>
+
+	<body class="bgefefef hasNav">
+		<div class="content">
+			<!--底部固定导航-->
+			<nav>
+				<ul class="clearfix">
+					<li class="active" style="background: url(images/nav-11.png) no-repeat center 0.1rem;background-size: 0.6rem;">
+						<a href="index.html">
+							首页
+						</a>
+					</li>
+					<li class="" style="background: url(images/nav-32.png) no-repeat center 0.1rem;background-size: 0.6rem;">
+						<a href="massage.html">
+							消息
+						</a>
+					</li>
+					<li class="" style="background: url(images/nav-42.png) no-repeat center 0.1rem;background-size: 0.6rem;">
+						<a href="mine.html">
+							我的
+						</a>
+					</li>
+				</ul>
+			</nav>
+			<!--底部固定导航 end-->
+			<div class="fixTop">
+				<div class="hallTop setWH" data-height="0.8">
+					<div class="back">
+						<a href="javascript.history.go(-1)"></a>
+					</div>
+					<div class="hallName">
+						淘宝客专区
+					</div>
+
+					<span class="hallSelect">其他专区</span>
+
+					<div class="othersHall setWH" data-width="3">
+						<ul>
+							<li>
+								<a href="#">买家秀专区 <span>0</span></a>
+							</li>
+							<li>
+								<a href="#">淘宝客专区 <span>5</span></a>
+							</li>
+							<li>
+								<a href="#">刷单专区 <span>2</span></a>
+							</li>
+							<li>
+								<a href="#">浏览专区 <span>7</span></a>
+							</li>
+							<li>
+								<a href="#">电影专区 <span>9</span></a>
+							</li>
+						</ul>
+					</div>
+					<script type="text/javascript">
+						$(function() {
+							$('.hallSelect').click(function() {
+								$('.othersHall,.othersHall::after').toggle();
+							});
+						})
+					</script>
+				</div>
+				<div class="movType swiper-container setWH" data-height="0.8">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide active"><a href="#">男装</a></div>
+						<div class="swiper-slide"><a href="#">女装</a></div>
+						<div class="swiper-slide"><a href="#">美妆</a></div>
+						<div class="swiper-slide"><a href="#">配饰</a></div>
+						<div class="swiper-slide"><a href="#">鞋品</a></div>
+						<div class="swiper-slide"><a href="#">箱包</a></div>
+						<div class="swiper-slide"><a href="#">儿童</a></div>
+						<div class="swiper-slide"><a href="#">母婴</a></div>
+						<div class="swiper-slide"><a href="#">美食</a></div>
+						<div class="swiper-slide"><a href="#">内衣</a></div>
+					</div>
+				</div>
+				
+				<div class="rank">
+					<ul class="clearfix">
+						<li class="active"><a href="#">综合</a></li>
+						<li><a href="#">价格</a></li>
+						<li><a href="#">券额</a></li>
+					</ul>
+				</div>
+				<script type="text/javascript">
+					$(function(){
+						var lis = $('.rank').find('li');
+						var width = 1/lis.length*100 + "%" ;
+						lis.each(function(){
+							$(this).css({width:width});
+						})
+					})
+				</script>
+			</div>
+			<!--列表-->
+			<div class="tbkList">
+				<ul class="clearfix">
+					<li class="setWH clearfix" data-height = "2.2" >
+						<a href="#">
+							<div class="tbkLeft autoimg setWH fl" data-src = "images/img-32.png" data-width = "1.8" data-height = "1.8"></div>
+							<div class="tbkRight setWH fr" data-width = "5.3" data-height = "1.8">
+								<h3>运动背心科鲁兹对啦按时拉倒点击ad拉大锯佳世客多拉多久傲娇的按道理家电阿拉丁家电基拉就到金金阿拉丁啊了</h3>
+								<p>销量：<span>81</span></p>
+								<p class="del">原价：<span>￥48.8</span></p>
+								<p>券后：<span class="redNum">￥28.8</span></p>
+								<div class="getCoupon"><span>领券减20元</span><span>立即领券</span></div>
+							</div>
+						</a>
+					</li>
+					
+					<li class="setWH clearfix" data-height = "2.2" >
+						<a href="#">
+							<div class="tbkLeft autoimg setWH fl" data-src = "images/img-32.png" data-width = "1.8" data-height = "1.8"></div>
+							<div class="tbkRight setWH fr" data-width = "5.3" data-height = "1.8">
+								<h3>运动背心科鲁兹对啦按时拉倒点击ad拉大锯佳世客多拉多久傲娇的按道理家电阿拉丁家电基拉就到金金阿拉丁啊了</h3>
+								<p>销量：<span>81</span></p>
+								<p class="del">原价：<span>￥48.8</span></p>
+								<p>券后：<span class="redNum">￥28.8</span></p>
+								<div class="getCoupon"><span>领券减20元</span><span>立即领券</span></div>
+							</div>
+						</a>
+					</li>
+					
+					<li class="setWH clearfix" data-height = "2.2" >
+						<a href="#">
+							<div class="tbkLeft autoimg setWH fl" data-src = "images/img-32.png" data-width = "1.8" data-height = "1.8"></div>
+							<div class="tbkRight setWH fr" data-width = "5.3" data-height = "1.8">
+								<h3>运动背心科鲁兹对啦按时拉倒点击ad拉大锯佳世客多拉多久傲娇的按道理家电阿拉丁家电基拉就到金金阿拉丁啊了</h3>
+								<p>销量：<span>81</span></p>
+								<p class="del">原价：<span>￥48.8</span></p>
+								<p>券后：<span class="redNum">￥28.8</span></p>
+								<div class="getCoupon"><span>领券减20元</span><span>立即领券</span></div>
+							</div>
+						</a>
+					</li>
+					
+					<li class="setWH clearfix" data-height = "2.2" >
+						<a href="#">
+							<div class="tbkLeft autoimg setWH fl" data-src = "images/img-32.png" data-width = "1.8" data-height = "1.8"></div>
+							<div class="tbkRight setWH fr" data-width = "5.3" data-height = "1.8">
+								<h3>运动背心科鲁兹对啦按时拉倒点击ad拉大锯佳世客多拉多久傲娇的按道理家电阿拉丁家电基拉就到金金阿拉丁啊了</h3>
+								<p>销量：<span>81</span></p>
+								<p class="del">原价：<span>￥48.8</span></p>
+								<p>券后：<span class="redNum">￥28.8</span></p>
+								<div class="getCoupon"><span>领券减20元</span><span>立即领券</span></div>
+							</div>
+						</a>
+					</li>
+					
+					<li class="setWH clearfix" data-height = "2.2" >
+						<a href="#">
+							<div class="tbkLeft autoimg setWH fl" data-src = "images/img-32.png" data-width = "1.8" data-height = "1.8"></div>
+							<div class="tbkRight setWH fr" data-width = "5.3" data-height = "1.8">
+								<h3>运动背心科鲁兹对啦按时拉倒点击ad拉大锯佳世客多拉多久傲娇的按道理家电阿拉丁家电基拉就到金金阿拉丁啊了</h3>
+								<p>销量：<span>81</span></p>
+								<p class="del">原价：<span>￥48.8</span></p>
+								<p>券后：<span class="redNum">￥28.8</span></p>
+								<div class="getCoupon"><span>领券减20元</span><span>立即领券</span></div>
+							</div>
+						</a>
+					</li>
+				
+				</ul>
+			</div>
+		</div>
+
+		<script src="js/swiper-3.4.2.min.js"></script>
+		<script>
+			var movieSwiper = new Swiper('.swiper-container', {
+//			pagination: '.swiper-pagination',
+				slidesPerView: 5.5,
+				paginationClickable: true,
+				spaceBetween: 30,
+				freeMode: true
+			});
+		</script>
+	</body>
+
+</html>
