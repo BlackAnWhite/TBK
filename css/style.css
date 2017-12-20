@@ -1987,19 +1987,26 @@ body.login-bg {
 	top:0;
 }
 /*完善身份标签*/
-.modelBox .modBody .signBox{
+.modelBox .modBody .signBox,
+.modelBox .modBody .signBoxs{
 	width: 100%;
 }
-.modelBox .modBody .signBox span{
+.modelBox .modBody .signBox span,
+.modelBox .modBody .signBoxs span{
 	padding: 0.15rem 0.18rem;
 	margin-bottom: 0.1rem;
 	border-radius: 0.5rem;
-	background: #E9E9E9;
-	/*border: 1px solid #ccc;*/
+	background: #e0e0e0;
+	color: #fff;
+	min-width: 1rem;
+	text-align: center;
 	display: inline-block;
 	font-size: 0.24rem;
 }
-
+.modelBox .modBody .signBox span.active,
+.modelBox .modBody .signBoxs span.active{
+	background: #F64C68;
+}
 
 
 
