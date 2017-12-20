@@ -86,6 +86,49 @@
 				</div>
 			</div>
 		</div>
+
+		<script>
+			$(function() {
+
+				var obj = document.getElementById('fileImg');
+				var ALi = obj.getElementsByTagName('li');
+				addFn();
+
+				function addFn() {
+					for(var i = 0; i < ALi.length; i++) {
+						ALi[i].getElementsByTagName('input')[0].index = i;
+						ALi[i].getElementsByTagName('span')[0].index = i;
+						// 文件域改变后执行
+						ALi[i].getElementsByTagName('input')[0].onchange = function() {
+							ALi[this.index].getElementsByTagName('span')[0].style.display = 'block'; //删除按钮显示
+							//				
+							ALi[this.index].style.backgroundImage = 'url(' + getFileUrl(this) + ')';
+
+						};
+						// 删除按钮事件
+						ALi[i].getElementsByTagName('span')[0].onclick = function() {
+							ALi[this.index].style.backgroundImage = '';
+							ALi[this.index].getElementsByTagName('span')[0].style.display = 'none'; //删除按钮显示
+							//			        ALi[this.index].innerHTML = '<input type="file" class="upfile" ><span></span>';
+							addFn();
+						};
+					};
+				};
+
+				// 创建本地地址
+				function getFileUrl(sourceId) {
+					var url;
+					if(navigator.userAgent.indexOf("MSIE") >= 1) { // IE 
+						url = sourceId.value;
+					} else if(navigator.userAgent.indexOf("Firefox") > 0) { // Firefox 
+						url = window.URL.createObjectURL(sourceId.files.item(0));
+					} else if(navigator.userAgent.indexOf("Chrome") > 0) { // Chrome 
+						url = window.URL.createObjectURL(sourceId.files.item(0));
+					}
+					return url;
+				};
+			});
+		</script>
 	</body>
 
 </html>

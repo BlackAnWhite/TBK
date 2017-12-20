@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>完善个人资料</title>
+		<meta charset="UTF-8">
+		<!-- 优先使用 IE 最新版本和 Chrome -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<!-- 页面描述 -->
+		<meta name="description" content="" />
+		<!-- 页面关键词 -->
+		<meta name="keywords" content="" />
+		<!-- 网页作者 -->
+		<meta name="author" content="BlackAnWhite" />
+		<!-- 搜索引擎抓取 -->
+		<meta name="robots" content="index,follow" />
+		<!-- 为移动设备添加 viewport -->
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/blackanwhite.js"></script>
+		<script>
+			document.documentElement.style.fontSize = 100 * document.documentElement.clientWidth / 750 + 'px';
+		</script>
+
+	</head>
+
+	<body class="bgefefef">
+		<div class="content">
+			<!--头部-->
+			<div class="mineTop autoimg setWH" data-src="images/mineBg.jpg" data-height="2">
+				<div class="minePic autoimg setWH" data-src="images/xiaobian.jpg" data-height="1.4" data-width="1.4">
+
+				</div>
+				<div class="myName">
+					凉凉
+				</div>
+				<div class="rz"><span>未认证</span></div>
+			</div>
+			
+			<form action="">
+				<div class="dataBox">
+					<div class="dataTit">
+						<i></i>基本信息
+					</div>
+					<div class="dataBody">
+						<ul>
+							<li>
+								<lable>
+									真实姓名 <input type="text" placeholder="请输入" />
+								</lable>
+							</li>
+							<li>
+								<lable>
+									性别
+									<select name="">
+										<option value="">男</option>
+										<option value="">女</option>
+									</select>
+								</lable>
+							</li>
+							<li>
+								<lable>
+									地区 <input type="text" placeholder="河南省 郑州市" />
+								</lable>
+							</li>
+							<li>
+								<lable>
+									身高 <input type="text" placeholder="请输入" />
+								</lable>
+							</li>
+							<li>
+								<lable>
+									体重 <input type="text" placeholder="请输入" />
+								</lable>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="dataBox">
+					<div class="dataTit">
+						<i></i>账号信息
+					</div>
+					<div class="dataBody">
+						<ul>
+							<li>
+								<lable>
+									账号 <input type="text" value="18222222222" readonly="readonly"/>
+								</lable>
+							</li>
+							<li>
+								<lable>
+									模特昵称	<input type="text" placeholder="请输入"/>								
+								</lable>
+							</li>
+							<li class="upFileLi">
+								<lable>
+									淘宝账号 <input type="text" placeholder="请输入" />
+								</lable>
+								<div class="autoimg upFileBox">
+									<input class="upImg" type="file">
+									<span></span>																		
+								</div>
+							</li>
+							<li class="upFileLi">
+								<lable>
+									淘气值 <input type="text" placeholder="请输入" />
+								</lable>																
+								<div class="autoimg upFileBox">
+									<input class="upImg" type="file">
+									<span></span>																		
+								</div>
+							</li>
+							<li class="upFileLi">
+								<lable>
+									淘宝等级 <input type="text" placeholder="请输入" />
+								</lable>
+								<div class="autoimg upFileBox">
+									<input class="upImg" type="file">
+									<span></span>																		
+								</div>
+							</li>
+							<li>
+								<lable>
+									绑定支付宝 <input type="text" placeholder="请输入" />
+								</lable>
+							</li>					
+						</ul>
+					</div>
+				</div>
+				
+				<input type="button" class="saveBtn" value="提交"/>
+			</form>
+			
+		</div>
+		<script type="text/javascript">
+			$(function() {				
+				var ALi = document.getElementsByClassName('upFileBox');
+				addFn();
+				function addFn() {
+					for(var i = 0; i < ALi.length; i++) {
+						ALi[i].getElementsByTagName('input')[0].index = i;
+						ALi[i].getElementsByTagName('span')[0].index = i;
+						// 文件域改变后执行
+						ALi[i].getElementsByTagName('input')[0].onchange = function() {
+							ALi[this.index].getElementsByTagName('span')[0].style.display = 'block'; //删除按钮显示			
+							ALi[this.index].style.backgroundImage = 'url(' + getFileUrl(this) + ')';
+						};
+						// 删除按钮事件
+						ALi[i].getElementsByTagName('span')[0].onclick = function() {
+							ALi[this.index].style.backgroundImage = '';
+							ALi[this.index].getElementsByTagName('span')[0].style.display = 'none'; //删除按钮显示
+							addFn();
+						};
+					};
+				};
+
+				// 创建本地地址
+				function getFileUrl(sourceId) {
+					var url;
+					if(navigator.userAgent.indexOf("MSIE") >= 1) { // IE 
+						url = sourceId.value;
+					} else if(navigator.userAgent.indexOf("Firefox") > 0) { // Firefox 
+						url = window.URL.createObjectURL(sourceId.files.item(0));
+					} else if(navigator.userAgent.indexOf("Chrome") > 0) { // Chrome 
+						url = window.URL.createObjectURL(sourceId.files.item(0));
+					}
+					return url;
+				};
+			});
+		</script>
+	</body>
+
+</html>

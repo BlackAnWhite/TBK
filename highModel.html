@@ -98,20 +98,19 @@
 					</div>
 					<div class="modelBox">
 						<div class="modTit"><i></i>上传认证视频</div>
-						<div class="modBody">							
+						<div class="modBody">
 							<div class="chooseBtn">选择文件</div>
 							<input type="file" class="videoInput">
 							<span class="fileName">1111</span>
-        			<script type="text/javascript">
-        				$(function(){        					
-        					$('.videoInput').change(function(){
-        						 var strFileName=$('.videoInput').val().replace(/^.+?\\([^\\]+?)(\.[^\.\\]*?)?$/gi,"$1");  //正则表达式获取文件名，不带后缀
-        						 var FileExt=$('.videoInput').val().replace(/.+\./,"");   //正则表达式获取后缀
-        						$('.fileName').text(strFileName+'.'+FileExt);
-        					});
-        				})
-        				
-        			</script>
+							<script type="text/javascript">
+								$(function() {
+									$('.videoInput').change(function() {
+										var strFileName = $('.videoInput').val().replace(/^.+?\\([^\\]+?)(\.[^\.\\]*?)?$/gi, "$1"); //正则表达式获取文件名，不带后缀
+										var FileExt = $('.videoInput').val().replace(/.+\./, ""); //正则表达式获取后缀
+										$('.fileName').text(strFileName + '.' + FileExt);
+									});
+								})
+							</script>
 						</div>
 					</div>
 					<button class="modBtn">申请认证</button>
@@ -119,6 +118,43 @@
 				</form>
 			</div>
 		</div>
+		<script type="text/javascript">
+				var obj = document.getElementById('fileImg');
+				var ALi = obj.getElementsByTagName('li');
+//					console.log(ALi);				
+				addFn();				
+				function addFn() {
+					for(var i = 0; i < ALi.length; i++) {
+						ALi[i].getElementsByTagName('input')[0].index = i;
+						ALi[i].getElementsByTagName('span')[0].index = i;
+						// 文件域改变后执行
+						ALi[i].getElementsByTagName('input')[0].onchange = function() {
+							ALi[this.index].getElementsByTagName('span')[0].style.display = 'block'; //删除按钮显示			
+							ALi[this.index].style.backgroundImage = 'url(' + getFileUrl(this) + ')';
+						};
+						// 删除按钮事件
+						ALi[i].getElementsByTagName('span')[0].onclick = function() {
+							ALi[this.index].style.backgroundImage = '';
+							ALi[this.index].getElementsByTagName('span')[0].style.display = 'none'; //删除按钮显示
+							addFn();
+						};
+					};
+				};
+
+				// 创建本地地址
+				function getFileUrl(sourceId) {
+					var url;
+					if(navigator.userAgent.indexOf("MSIE") >= 1) { // IE 
+						url = sourceId.value;
+					} else if(navigator.userAgent.indexOf("Firefox") > 0) { // Firefox 
+						url = window.URL.createObjectURL(sourceId.files.item(0));
+					} else if(navigator.userAgent.indexOf("Chrome") > 0) { // Chrome 
+						url = window.URL.createObjectURL(sourceId.files.item(0));
+					}
+					return url;
+				};
+			
+		</script>
 	</body>
 
 </html>
