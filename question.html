@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>常见问题</title>
+  <meta charset="UTF-8">
+  <!-- 优先使用 IE 最新版本和 Chrome -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!-- 页面描述 -->
+  <meta name="description" content="" />
+  <!-- 页面关键词 -->
+  <meta name="keywords" content="" />
+  <!-- 网页作者 -->
+  <meta name="author" content="BlackAnWhite" />
+  <!-- 搜索引擎抓取 -->
+  <meta name="robots" content="index,follow" />
+  <!-- 为移动设备添加 viewport -->
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="js/blackanwhite.js"></script>
+  <script>
+  document.documentElement.style.fontSize = 100 * document.documentElement.clientWidth / 750 + 'px';
+  </script>
+</head>
+
+<body class="bgefefef">
+  <style>
+	  .question>h2 {
+	    font-size: 0.36rem;
+	    text-align: center;
+	    color: #f64c68;
+	    font-weight: 600;
+	    padding-top: 0.5rem;
+	  }
+
+	  .question>.mj-design-line {
+	    width: 3.6rem;
+	    height: 2px;
+	    background-color: #f64c68;
+	    margin: 12px auto 18px;
+	    position: relative;
+	  }
+
+	  .question>.mj-design-line::after {
+	    top: 2px;
+	    content: ' ';
+	    display: block;
+	    width: 0;
+	    height: 0;
+	    background-color: #f64c68;
+	    position: absolute;
+	    left: 0;
+	    right: 0;
+	    margin: auto;
+	    border-width: 8px;
+	    border-style: solid;
+	    border-color: #f64c68 #efefef #efefef #efefef;
+	  }
+
+	  .question>h5 {
+	    padding: 0 0.2rem;
+	    text-indent: 2em;
+	    line-height: 0.4rem;
+	    font-size: 0.24rem;
+	    text-align: justify;
+	  }
+
+	  .question>h5 span {
+	    font-size: 0.32rem;
+	    color: #f64c68;
+	  }
+
+	  .question>ul {
+	    margin: 0.3rem 0 0;
+	  }
+
+	  .question>ul>li {
+	    background-color: #fff;
+	    border-bottom: 1px solid #ccc;
+	    box-shadow: 0 0 3px #999;
+	    /* line-height: 0.8rem; */
+	  }
+
+	  .question>ul>li>h3 {
+	    padding: 0 0.2rem;
+	    line-height: 0.8rem;
+	    font-size: 0.26rem;
+	  }
+
+	  .question>ul>li>h3::after {
+	    content: '+';
+	    float: right;
+	  }
+
+	  .question>ul>li>h3 span {
+	    font-size: 0.28rem;
+	    background-color: #f64c68;
+	    display: inline-block;
+	    border-radius: 0.4rem;
+	    width: 0.4rem;
+	    height: 0.4rem;
+	    line-height: 0.4rem;
+	    text-align: center;
+	    color: #fff;
+	    margin-right: 0.2rem;
+	    font-family: Arial;
+	  }
+
+	  .question-content {
+	    padding: 0 0.22rem 0.2rem;
+	    overflow: hidden;
+	    display: none;
+	  }
+  </style>
+  <div class="content">
+    <section class="question">
+      <h2>新手扫盲必读区</h2>
+      <h6 class="mj-design-line"></h6>
+      <h5><span>欢迎您</span> 成为我们淘宝客的一员，作为新成员的你，肯定对我们平台还有很多很多疑问吧，请先在列表中点击查看自己想要了解到内容建议您将所有问题都浏览一遍，为您以后的接单过程扫平障碍呦~~~</h5>
+      <ul class="question-list">
+        <li>
+          <h3><span>1</span>新手务必在公众号学习视频教程</h3>
+          <section class="question-content">
+            <p>详情自定义编辑</p>
+          </section>
+        </li>
+        <li>
+          <h3><span>2</span>新手务必在公众号学习视频教程</h3>
+          <section class="question-content">
+            <p>详情自定义编辑</p>
+          </section>
+        </li>
+        <li>
+          <h3><span>3</span>新手务必在公众号学习视频教程</h3>
+          <section class="question-content">
+            <p>详情自定义编辑</p>
+          </section>
+        </li>
+        <li>
+          <h3><span>4</span>新手务必在公众号学习视频教程</h3>
+          <section class="question-content">
+            <p>详情自定义编辑</p>
+          </section>
+        </li>
+        <li>
+          <h3><span>5</span>新手务必在公众号学习视频教程</h3>
+          <section class="question-content">
+            <p>详情自定义编辑</p>
+          </section>
+        </li>
+        <li>
+          <h3><span>6</span>新手务必在公众号学习视频教程</h3>
+          <section class="question-content">
+            <p>详情自定义编辑</p>
+          </section>
+        </li>
+      </ul>
+    </section>
+  </div>
+  <script type="text/javascript">
+	  $(function() {
+	    $('.question-list>li>h3').on('click', function() {
+	      $(this).siblings('.question-content').stop().slideToggle();
+	    });
+	  });
+  </script>
+</body>
+
+</html>
