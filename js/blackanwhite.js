@@ -139,4 +139,13 @@ $(function() {
 		});
 	};
 })
-
+//标签
+$(function(){
+	$('.signBox span').click(function(){
+		$(this).toggleClass('active');
+		$(this).siblings().removeClass('active');
+	})
+	$('.signBoxs span').click(function(){
+		$(this).toggleClass('active');
+	})
+})
