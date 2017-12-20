@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>客服中心</title>
+  <meta charset="UTF-8">
+  <!-- 优先使用 IE 最新版本和 Chrome -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <!-- 页面描述 -->
+  <meta name="description" content="" />
+  <!-- 页面关键词 -->
+  <meta name="keywords" content="" />
+  <!-- 网页作者 -->
+  <meta name="author" content="BlackAnWhite" />
+  <!-- 搜索引擎抓取 -->
+  <meta name="robots" content="index,follow" />
+  <!-- 为移动设备添加 viewport -->
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+  <script type="text/javascript" src="js/blackanwhite.js"></script>
+  <script>
+  document.documentElement.style.fontSize = 100 * document.documentElement.clientWidth / 750 + 'px';
+  </script>
+</head>
+
+<body>
+  <style>
+  .customer-server>h2 {
+    font-size: 0.36rem;
+    text-align: center;
+    color: #f64c68;
+    font-weight: 600;
+    padding-top: 0.5rem;
+  }
+
+  .customer-server>.mj-design-line {
+    width: 3.6rem;
+    height: 2px;
+    background-color: #f64c68;
+    margin: 12px auto 18px;
+    position: relative;
+  }
+
+  .customer-server>.mj-design-line::after {
+    top: 2px;
+    content: ' ';
+    display: block;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 8px solid transparent;
+    border-top-color: #f64c68;
+  }
+
+  .customer-server>h5 {
+    padding: 0 0.2rem;
+    text-indent: 2em;
+    line-height: 0.4rem;
+    font-size: 0.24rem;
+    text-align: justify;
+    margin-bottom: 0.5rem;
+  }
+
+  .customer-server>h5 span {
+    font-size: 0.32rem;
+    color: #f64c68;
+  }
+
+  .customer-server>p{
+    font-size: 0.24rem;
+    line-height: 0.37rem;
+    padding: 0 0.2rem;
+    text-align: center;
+  }
+
+  .customer-server>img{
+    width: 3rem;
+    margin: 0 auto;
+    margin-top: 0.6rem;
+  }
+  .customer-server>h4 {
+    text-align: center;
+    font-size: 0.24rem;
+    padding-top: 0.2rem;
+    margin-bottom: 0.3rem;
+  }
+  </style>
+  <div class="content">
+    <section class="customer-server">
+      <h2>客服中心</h2>
+      <h6 class="mj-design-line"></h6>
+      <h5><span>欢迎您</span> 来到客服中心，我们将竭诚为您服务。您的满意——是我们永远的追求，淘宝客客服中心，愿意成为您最诚实可靠的在线朋友，成为您最及时能干的互联网同事，为您服务，替您排忧。</h5> 
+      <img src="images/QRcode.jpg">
+      <h4>长按二维码 添加客服微信</h4>
+      <p>客服Q Q:815969707</p>
+      <p>客服电话:12345678971</p>
+    </section>
+  </div>
+  <script type="text/javascript">
+  $(function() {
+    $('.question-list>li>h3').on('click', function() {
+      $(this).siblings('.question-content').stop().slideToggle();
+    });
+  });
+  </script>
+</body>
+
+</html>
