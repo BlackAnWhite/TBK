@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title>提交任务凭证</title>
+		<meta charset="UTF-8">
+		<!-- 优先使用 IE 最新版本和 Chrome -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<!-- 页面描述 -->
+		<meta name="description" content="" />
+		<!-- 页面关键词 -->
+		<meta name="keywords" content="" />
+		<!-- 网页作者 -->
+		<meta name="author" content="BlackAnWhite" />
+		<!-- 搜索引擎抓取 -->
+		<meta name="robots" content="index,follow" />
+		<!-- 为移动设备添加 viewport -->
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/style.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<script type="text/javascript" src="js/blackanwhite.js"></script>
+	</head>
+
+	<body class="bgefefef hasNav">
+		<div class="content">
+
+			<div class="bigPic autoimg" data-src="images/bigPic.png">
+				<div class="missionSign">
+					<h3>买家秀任务</h3>
+					<p><span>价格：187.11元</span><span>奖励：获得产品</span><span>类型：无需退货</span></p>
+				</div>
+			</div>
+			<script type="text/javascript">
+				$(function() {
+					$('.bigPic').each(function() {
+						var self = $(this);
+						self.height(self.width());
+					})
+				})
+			</script>
+
+			<div class="missionFlows">
+				<span class="missionArrow"><a href="#">查看任务详情</a></span>
+				<span class="missionArrow  active"><a href="#">提交任务凭证</a></span>
+				<span>任务完成</span>
+			</div>
+			<div class="model">
+				<form action="">
+					<div class="modelBox">
+						<div class="modTit"><i></i>凭证一</div>
+						<div class="modBody">
+							<p><span>凭证1说明1、</span>优先科技打瞌睡卡的啊卡死大家啊</p>
+							<p><span>凭证要求、</span>优先科技打瞌睡卡的啊卡死大家啊</p>
+							<div class="upFileLi">
+								<div class="autoimg upFileBox">
+									<input class="upImg" type="file">
+									<span></span>																		
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					
+					<div class="modelBox">
+						<div class="modTit"><i></i>凭证二</div>
+						<div class="modBody">
+							<p><span>凭证2说明1、</span>优先科技打瞌睡卡的啊卡死大家啊</p>
+							<p><span>凭证要求、</span>优先科技打瞌睡卡的啊卡死大家啊</p>
+							<div class="upFileLi">
+								<div class="autoimg upFileBox">
+									<input class="upImg" type="file">
+									<span></span>																		
+								</div>
+							</div>
+							
+						</div>
+					</div>
+					
+					<div class="modelBox">
+						<div class="modTit"><i></i>凭证三</div>
+						<div class="modBody">
+							<p><span>凭证3说明1、</span>优先科技打瞌睡卡的啊卡死大家啊</p>
+							<p><span>凭证要求、</span>优先科技打瞌睡卡的啊卡死大家啊</p>
+							<div class="upFileLi">
+								<div class="autoimg upFileBox">
+									<input class="upImg" type="file">
+									<span></span>																		
+								</div>
+							</div>
+							
+						</div>
+					</div>
+
+					<input type="button" class="subBtn" value="提交"/>
+				</form>
+			</div>
+
+		</div>
+		<script type="text/javascript">
+			$(function() {				
+				var ALi = document.getElementsByClassName('upFileBox');
+				addFn();
+				function addFn() {
+					for(var i = 0; i < ALi.length; i++) {
+						ALi[i].getElementsByTagName('input')[0].index = i;
+						ALi[i].getElementsByTagName('span')[0].index = i;
+						// 文件域改变后执行
+						ALi[i].getElementsByTagName('input')[0].onchange = function() {
+							ALi[this.index].getElementsByTagName('span')[0].style.display = 'block'; //删除按钮显示			
+							ALi[this.index].style.backgroundImage = 'url(' + getFileUrl(this) + ')';
+						};
+						// 删除按钮事件
+						ALi[i].getElementsByTagName('span')[0].onclick = function() {
+							ALi[this.index].style.backgroundImage = '';
+							ALi[this.index].getElementsByTagName('span')[0].style.display = 'none'; //删除按钮显示
+							addFn();
+						};
+					};
+				};
+
+				// 创建本地地址
+				function getFileUrl(sourceId) {
+					var url;
+					if(navigator.userAgent.indexOf("MSIE") >= 1) { // IE 
+						url = sourceId.value;
+					} else if(navigator.userAgent.indexOf("Firefox") > 0) { // Firefox 
+						url = window.URL.createObjectURL(sourceId.files.item(0));
+					} else if(navigator.userAgent.indexOf("Chrome") > 0) { // Chrome 
+						url = window.URL.createObjectURL(sourceId.files.item(0));
+					}
+					return url;
+				};
+			});
+		</script>
+	</body>
+
+</html>

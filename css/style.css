@@ -1670,7 +1670,7 @@ body.login-bg {
 }
 .model .modTit i{
 	border-left: 2px solid #F64C68;
-	margin-right: 0.1rem;
+	margin-right: 0.2rem;
 }
 .model .modBody{
 	padding: 0.2rem 0.15rem;
@@ -2007,16 +2007,89 @@ body.login-bg {
 .modelBox .modBody .signBoxs span.active{
 	background: #F64C68;
 }
-
-.modelBox .modBody .signBox{
-	 
+.model .signBtn{
+	width:90%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	background: #F64C68;
+	margin: 0.6rem auto;
+	text-align: center;
+	color: #fff;
+	border-radius: 0.1rem;
+}
+/*宝贝详情*/
+.bigPic{
+	position: relative;
+}
+.bigPic .missionSign{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 1.6rem;
+	background: rgba(0,0,0,.4);	
+	padding: 0.2rem;
+	color: #fff;
+}
+.bigPic .missionSign h3{
+	line-height: 0.6rem;
+	font-size: 0.36rem;
+}
+.bigPic .missionSign p span{
+	display: inline-block;
+	border: 1px solid #fff;
+	font-size: 0.24rem;
+	padding: 0.1rem;
+	margin-right: 0.1rem;
+}
+.missionFlows{
+	width: 100%;
+	height: 1.6rem;
+	background: #FFEAE9;
+	padding: 0.5rem 0.2rem;
+}
+.missionFlows span{
+	display: inline-block;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	background: #ddd;
+	padding: 0 0.2rem;
+	color: #fff;
+}
+.missionFlows span.missionArrow{
+	margin-right: 0.5rem;
+	position: relative;
+}
+.missionFlows span.missionArrow:after{
+	position: absolute;
+	content: '';
+	width: 0;
+	height: 0;
+	right: -0.59rem;
+	border: 0.3rem solid transparent;
+	border-left: 0.3rem solid #ddd;
+}
+.missionFlows span.active{
+	background: #F64C68;
+}
+.missionFlows span.active:after{
+	border-left: 0.3rem solid #F64C68;
+}
+.missionFlows span a{
+	color: #fff;
 }
 
-
-
-
-
-
+.subBtn{
+	width: 90%;
+	height: 0.8rem;
+	line-height: 0.8rem;
+	color: #Fff;
+	background: #F64C68;
+	border-radius: 0.1rem;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 0.5rem;
+	display: block;
+}
 
 
 
